@@ -2,6 +2,7 @@ package com.example.firestapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.firestapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -10,6 +11,10 @@ class MainActivity : AppCompatActivity() {
         var binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.name.text = "Mohammed Saidam"
+
+        binding.button.setOnClickListener {
+            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+        }
 
 
     }
