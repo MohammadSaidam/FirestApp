@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding.name.text = "Mohammed Saidam"
 
         binding.button.setOnClickListener {
-            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "event", Toast.LENGTH_SHORT).show()
         }
 
 
